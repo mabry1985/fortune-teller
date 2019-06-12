@@ -10,28 +10,27 @@
     <title>Fortune Teller</title>
   </head>
   <body>
-     <div class="container">
+    <div class="container">
 
-       <h1>Fortune Teller</h1>
-
-       <form id="fortune">
-         <div class="form-group">
-           <p>Have any of these unlucky events happened to you in the last month?</p>
-           <input class="unlucky" type="checkbox" name="unlucky" value="6"> Black cat crossed your path<br>
-           <input class="unlucky" type="checkbox" name="unlucky" value="6"> Broken a mirror<br>
-           <input class="unlucky" type="checkbox" name="unlucky" value="6"> Walked under a ladder<br>
-
-           <br>
-
-           <p>Have any of these lucky events happened to you in the last month?</p>
-           <input class="lucky" type="checkbox" name="lucky" value="-6"> Found a four leaf clover<br>
-           <input class="lucky" type="checkbox" name="lucky" value="-6"> Saw a double rainbow<br>
-           <input class="lucky" type="checkbox" name="lucky" value="-6"> Found a penny<br><br>
-           <button type="button" class="btn btn-success">Get your fortune!</button>
-         </div>
-       </form>
-       <br>
-        <h3 class="output"></h3>
-   </div>
+      <h1>Fortune Teller</h1>
+      <div class="heading">
+        <h4>Have any of these events happened to you in the last month?</h4>
+        <p><em>(check all that apply)</em>
+      </div>
+        <form id="fortune">
+          <div class="form-group">
+            <input type="checkbox" name="input" value="-6"> Found a four leaf clover<br>
+            <input type="checkbox" name="input" value="6"> Walked under a ladder<br>
+            <input type="checkbox" name="input" value="-6"> Found a penny<br>
+            <input type="checkbox" name="input" value="6"> Broken a mirror<br>
+            <input type="checkbox" name="input" value="-6"> Saw a double rainbow<br>
+            <input type="checkbox" name="input" value="6"> Black cat crossed your path<br>
+            <input type="checkbox" name="input" value="100"> None of the above<br><br>
+            <button type="button" class="btn">Get your fortune!</button>
+          </div>
+        </form>
+      <br>
+    </div>
+    <h3 class="output"></h3>
   </body>
 </html>
